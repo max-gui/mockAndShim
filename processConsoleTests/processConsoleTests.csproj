@@ -39,6 +39,9 @@
     <Reference Include="mockAndShim.Fakes">
       <HintPath>FakesAssemblies\mockAndShim.Fakes.dll</HintPath>
     </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -69,6 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Fakes Include="Fakes\mockAndShim.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
